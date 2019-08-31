@@ -1,81 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CAR-RENT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom position-fixed w-100">
         <div class="container">
-            <div class="navbar__logo">CAR-RENT</div>
-            <!-- /.navbar__logo -->
-            <ul class="navbar-list">
-                <li class="navbar-list__item">
-                    <a href="#" class="navbar-list__link">Арендовать машину</a>
-                </li>
-                <li class="navbar-list__item">
-                    <a href="#" class="navbar-list__link">Сдать машину</a>
-                </li>
-                <li class="navbar-list__item">
-                    <a href="#" class="navbar-list__link">Информация</a>
-                    <ul class="navbar-droplist">
-                        <li class="navbar-droplist__item">
-                            <a href="#" class="navbar-droplist__link">Условия</a>
-                        </li>
-                        <li class="navbar-droplist__item">
-                            <a href="#" class="navbar-droplist__link">Контакты</a>
-                        </li>
-                        <li class="navbar-droplist__item">
-                            <a href="#" class="navbar-droplist__link">FAQ</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- /.navbar__list -->
-            <div class="navbar__phone">+8(800)888-88-88</div>
-            <!-- /.navbar__phone -->
+            <span class="navbar-brand order-0 text-uppercase" href="#">Car-rent</span>
+            <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Арендовать авто</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Сдать в аренду</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Информация
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Условия</a>
+                            <a class="dropdown-item" href="#">Контакты</a>
+                            <a class="dropdown-item" href="#">FAQ</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <span class="nabbr-text order-1">+8(800)888-88-88</span>
         </div>
-        <!-- /.container -->
     </nav>
-    <!-- /.nav -->
 
     <header class="header">
         <div class="container">
-            <div class="header__title">Аренда частных авто</div>
-            <div class="header__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis consequatur provident numquam cupiditate reprehenderit. Cupiditate labore eum itaque, iure, numquam maiores eligendi accusamus at aut nulla ratione harum voluptatem iusto?</div>
-            <form class="header-filter">
-                <div class="header-filter__item">
-                    <input type="text" name="date-start">
-                    <label for="date-start">Дата начала аренды</label>
-                </div>
-                <div class="header-filter__item">
-                    <input type="text" name="date-end">
-                    <label for="date-end">Дата окончания аренды</label>
-                </div>
-                <div class="header-filter__item">
-                    <select name="car-class" id="">
-                        <option value="econom">Эконом</option>
-                        <option value="buisness">Бизнес</option>
-                        <option value="lux">Люкс</option>
-                    </select>
-                </div>
-                <div class="header-filter__item">
-                    <input type="submit" value="Подобрать">
-                </div>
-            </form>
-            <!-- /.header__filter -->
+            <h1 class="header__title display-3 text-center text-uppercase text-white font-weight-bold">Аренда частных авто</h1>
+            <p class="header__subtitle text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis consequatur provident numquam cupiditate reprehenderit</p>
         </div>
         <!-- /.container -->
     </header>
     <!-- /.header -->
-    <footer class="footer">
-        <div class="footer__phone">+8(800)888-88-88</div>
-        <!-- /.footer__phone -->
+
+    <main class="main">
+        <div class="container pt-5">
+            <h2 class="main__title text-center text-uppercase">Выбрать авто</h2>
+            <div class="main-list row">
+                
+                <div class="card col-sm-6 col-md-6 col-lg-4 border-0" style="width: 18rem;">
+                    <img src="./image/audi.jpg" class="card-img-top mt-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Audi</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Заказать</a>
+                    </div>
+                </div>
+                <div class="card col-sm-6 col-md-6 col-lg-4 border-0" style="width: 18rem;">
+                    <img src="./image/bmw.jpg" class="card-img-top mt-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">BMW</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Заказать</a>
+                    </div>
+                </div>
+                <div class="card col-sm-6 col-md-6 col-lg-4 border-0" style="width: 18rem;">
+                    <img src="./image/ford.jpg" class="card-img-top mt-3" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ford</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Заказать</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /.container -->
+    </main>
+    <!-- /.main -->
+
+    <footer class="footer bg-light border-top pt-3">
+        <div class="container d-flex justify-content-between">
+            <span class="navbar-brand order-0 text-uppercase" href="#">Car-rent</span>
+            <ul class="footer-list d-flex ml-auto">
+                <li class="footer-list__item">
+                    <a href="#">Аренда</a>
+                </li>
+                <li class="footer-list__item">
+                    <a href="#">Сдать авто</a>
+                </li>
+                <li class="footer-list__item">
+                    <a href="#">Условия</a>
+                </li>
+                <li class="footer-list__item">
+                    <a href="#">Контакты</a>
+                </li>
+                <li class="footer-list__item">
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+            <div class="footer__phone">+8(800)888-88-88</div>
+            <!-- /.footer__phone -->
+        </div>
+        <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
