@@ -19,13 +19,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/index.html">Главная</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/rent.html">Арендовать авто</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="/lease.html">Сдать в аренду</a>
                     </li>
                     <li class="nav-item">
@@ -37,12 +37,38 @@
         </div>
     </nav>
 
-    <main class="main">
-        <div class="container pt-5">
-            
+    <section class="lease">
+        <div class="container">
+            <h2 class="text-center mb-3">Заполните форму</h2>
+            <form class="lease-form">
+                <div class="form-group">
+                    <label for="inputName">ФИО</label>
+                    <input type="name" class="form-control" id="inputName" aria-describedby="emailHelp"
+                        placeholder="ФИО">
+                    <small id="nameHelp" class="form-text text-muted">Введите Фамилию и инициалы полностью.</small>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Электронная почта</label>
+                    <input type="email" class="form-control" id="inputEmail"
+                        placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="inputPhone">Телефон</label>
+                    <input type="phone" class="form-control" id="inputPhone" placeholder="Телефон">
+                </div>
+                <div class="form-group">
+                    <label for="inputDescription">Описание авто</label>
+                    <textarea class="form-control" id="inputDescription" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="inputPhoto">Фотографии</label>
+                    <input type="file" class="form-control-file" id="inputPhoto">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Отправить</button>
+            </form>
         </div>
         <!-- /.container -->
-    </main>
+    </section>
     <!-- /.main -->
 
     <footer class="footer bg-light border-top pt-3">

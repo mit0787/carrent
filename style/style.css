@@ -1,3 +1,7 @@
+.navbar {
+    z-index: 1000;
+}
+
 .header {
     padding: 150px 0;
     background: url("../image/road.jpg") no-repeat gray;
@@ -55,4 +59,14 @@
 
 .main__card ul {
     min-height: 120px;
+}
+
+.lease {
+    min-height: calc(100vh - 57px);
+    padding-top: 100px;
+}
+
+.lease-form {
+    max-width: 500px;
+    margin: auto;
 }
