@@ -55,10 +55,12 @@
 
 .main__card p {
     min-height: 144px;
+    text-align: justify;
 }
 
 .main__card ul {
     min-height: 120px;
+    text-align: justify;
 }
 
 .lease {
