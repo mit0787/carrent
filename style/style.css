@@ -70,3 +70,25 @@
     max-width: 500px;
     margin: auto;
 }
+
+.card-title span {
+    float: right;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-list li {
+    flex-basis: 110px;
+}
+
+.card {
+    transition: 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0 0 5px 0 grey;
+}
