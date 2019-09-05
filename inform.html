@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,6 +9,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom position-fixed w-100">
@@ -33,35 +35,50 @@
                     </li>
                 </ul>
             </div>
-            <span class="nabbr-text order-1">+8(800)888-88-88</span>
+            <a href="#" class="btn btn-outline-primary">Заказать звонок</a>
         </div>
     </nav>
 
     <section class="inform">
         <div class="container">
-            <h3 class="inform__title">Реквизиты</h3>
-            <ul>
-                <p>Агент:</p>
-                <li><strong>Индивидуальный предприниматель</strong>ФИО</li>
-                <li><strong>ИНН</strong> 0000000</li>
-                <li><strong>Адрес:</strong> РФ</li>
-                <li><strong>Номер счёта:</strong> 0000000</li>
-                <li><strong>Валюта:</strong> Рубли</li>
-                <li><strong>Банк:</strong> АО «АЛЬФА-БАНК»</li>
-                <li><strong>БИК:</strong> 000000</li>
-                <li><strong>Кор. счёт:</strong> 00000000</li>
-                <li><strong>тел.</strong> +8(888)888-88-88</li>
-            </ul>
-            
+            <div class="row">
+                <div class="inform__contacts col-12 col-md-6 mt-5">
+                    <h3 class="contacts__title">Контактные данные</h3>
+                    <ul>
+                        <li><strong>ООО "КОНСИНКОМ"</strong></li>
+                        <li><strong>ИНН:</strong> 0000000</li>
+                        <li><strong>ОГРН:</strong> 0000000</li>
+                    </ul>
+                </div>
+                <form class="inform-form col-12 col-md-6 my-5">
+                    <h3>Форма обратной связи</h3>
+                    <div class="form-group">
+                        <input type="name" class="form-control" id="inputName" aria-describedby="emailHelp"
+                            placeholder="ФИО">
+                        <small id="nameHelp" class="form-text text-muted">Введите фамилию и инициалы полностью.</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Электронная почта">
+                    </div>
+                    <div class="form-group">
+                        <input type="phone" class="form-control" id="inputPhone" placeholder="Телефон">
+                    </div>
+                    <div class="form-group">
+                        <label for="formTextarea">Текст сообщения</label>
+                        <textarea class="form-control" id="formTextarea" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                </form>
+            </div>
         </div>
         <!-- /.container -->
     </section>
     <!-- /.main -->
 
-    <footer class="footer bg-light border-top pt-3">
-        <div class="container d-flex justify-content-between">
+    <footer class="footer bg-light border-top">
+        <div class="container d-flex justify-content-between align-items-center pt-2 pb-2">
             <span class="navbar-brand order-0 text-uppercase" href="#">КОНСИНКОМ</span>
-            <ul class="footer-list d-flex ml-auto">
+            <ul class="footer-list d-flex ml-auto mt-auto mb-auto">
                 <li class="footer-list__item">
                     <a href="#">Аренда</a>
                 </li>
@@ -79,13 +96,14 @@
     </footer>
     <!-- /.footer -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

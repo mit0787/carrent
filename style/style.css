@@ -10,9 +10,9 @@
 }
 
 .card img {
-    max-height: 180px;
+    height: 225px;
     object-fit: cover;
-    object-position: 0 50%;
+    object-position: 50% 50%;
 }
 
 .footer-list {
@@ -24,7 +24,7 @@
 }
 
 .header__title {
-    text-shadow: 3px 3px 3px grey;
+    text-shadow: 0 0 20px grey;
 }
 
 .subtitle-wrapper {
@@ -33,12 +33,12 @@
 }
 
 .inform {
-    height: calc(100vh - 57px);
-    padding-top: 150px;
+    height: calc(100vh - 56px);
+    padding: 100px 0;
 }
 
 .rent {
-    min-height: calc(100vh - 57px);
+    min-height: calc(100vh - 56px);
 }
 
 .main__card {
@@ -62,7 +62,7 @@
 }
 
 .lease {
-    min-height: calc(100vh - 57px);
+    min-height: calc(100vh - 56px);
     padding-top: 100px;
 }
 
